@@ -4,15 +4,17 @@ version: 1.0.2
 homepage: https://github.com/segmentio/analytics_flutter#readme
 repository: https://github.com/segmentio/analytics_flutter/tree/main/packages/plugins/plugin_appsflyer#readme
 issue_tracker: https://github.com/segmentio/analytics_flutter/issues
+publish_to: none
 
 environment:
-  sdk: '>=3.2.0 <4.0.0'
+  sdk: ">=3.2.0 <4.0.0"
   flutter: ">=3.16.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  segment_analytics: ^1.1.1
+  segment_analytics:
+    path: ../../core
   json_annotation: ^4.9.0
   appsflyer_sdk: ^6.15.2
 
@@ -22,5 +24,3 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
-
-
